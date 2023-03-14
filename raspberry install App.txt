@@ -1,0 +1,43 @@
+download raspbian
+step to install raspbian
+1. format the disk using sdformatter(install it first by using google).
+2. install raspbian by win32diskimager (install it from google).
+	a) install raspbian image file.
+	b) create a ssh file(by removing .txt extension/without any extension).
+	3)goto cmdline.txt and set a IP(randomly) as 169.254.3.15 at the last of the predefined string(in same line).
+	4) eject the usb.
+....................................................................................................................................
+
+	1.insert memory card in raspberry IOT kit.
+	2.download putty software and open it.
+	3. write IP as we mentioned in cmdline.txt file as(169.254.3.15)
+	4. click on open	
+	5. click yes on warning message.
+	6. now login promp is opened automatically.
+	7. enter username as:-pi 
+		password :raspberry (enter)
+	8.now terminal window will opened.
+
+pi@raspberry:	sudo raspi-config
+
+now configuration file will opened:
+		1) goto interfacing->enable ssh->enable vnc
+		2) goto advanced -> expand file system
+		3) finish-reboot
+
+download vnc viewer
+
+		1) double click on give image(as our configure IP is mentioned)
+		2) set resolution by using preferences.(if need).
+		3) connect with wifi (no need for data, need only connection).
+		4) preference-raspberry-pi configuration->check wait for network
+		5) install network ip scanner(android app in mobile) and get wifi device ip.
+		6) install vnc viewer andoid app in mobile( put ip in vnc viewer and connect with the raspberry kit).	
+
+		7) run the command sudo apt-get update
+		8) run the command sudo apt-get upgrade
+		9) run the command sudo apt-get eclipse 
+		10)run the command sudo apt-get install mysql-server
+		
+
+ip:-192.168.43.39 (my wifi ip)
